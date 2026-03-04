@@ -5,6 +5,7 @@ import { ArrowRight } from 'lucide-react';
 export default function Hero() {
   return (
     <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
+      {/* Spline Background */}
       <div className="absolute inset-0 z-0">
         <iframe
           src='https://my.spline.design/interactivecubes-6ugSKWKzY40dsBjUrKqZwF6T/'
@@ -14,7 +15,11 @@ export default function Hero() {
           title="Spline 3D Background"
         ></iframe>
       </div>
+
+      {/* Modern Gradient Overlay */}
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-[#050505]/20 via-[#050505]/50 to-[#050505] pointer-events-none"></div>
+
+      {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-6 text-center pointer-events-none mt-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,6 +29,7 @@ export default function Hero() {
         >
           flow AI launch
         </motion.div>
+
         <motion.h1
           className="text-[clamp(3.5rem,18vw,12rem)] font-black tracking-tighter mb-12 leading-none"
           initial={{ opacity: 0, y: 30 }}
@@ -34,6 +40,7 @@ export default function Hero() {
             AX NOW
           </span>
         </motion.h1>
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
